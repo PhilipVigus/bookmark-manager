@@ -1,1 +1,13 @@
-Bookmarks
+<h1>Bookmarks</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>URL</th>
+    </tr>
+    <% @bookmarks.each do |bookmark| %>    
+        <tr>
+            <td><%= bookmark[:name] %></td>
+            <td><%= bookmark[:url] %></td>
+        <tr> 
+    <% end %>
+</table>
